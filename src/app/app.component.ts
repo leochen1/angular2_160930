@@ -9,10 +9,10 @@ export class AppComponent {
   title = 'app works!';
   keyword: string = 'test';
 
-  doSearch($event: KeyboardEvent, inputDom: HTMLInputElement) {
+  doSearch($event: KeyboardEvent, keyword: string) {
     console.log($event);
     if($event.keyCode==13){
-      this.keyword = inputDom.value;  //目前觸發的DOM
+      this.keyword = keyword;
     }
   }
 }
