@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  title = "leochen!!!";
+  titleurl = "http://google.com.tw";
+  subtitle = "記載著 leochen 在網路世界的學習心得與技術分享";
+
   constructor() { }
 
   ngOnInit() {
