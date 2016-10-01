@@ -13,6 +13,11 @@ export class AppComponent {
     this.keyword = keyword;
   }
 
+  doDeleteArticle(item){
+    let idx = this.data.indexOf(item)
+    this.data.splice(idx, 1);   //刪除data下的那筆item資料(data非真正被delete)
+  }
+
   data = [
     {
       "href": "http://blog.miniasp.com/post/2016/04/30/Visual-Studio-Code-from-Command-Prompt-notes.aspx",
