@@ -9,10 +9,7 @@ export class AppComponent {
   title = 'app works!';
   keyword: string = 'test';
 
-  doSearch($event: KeyboardEvent, keyword: string) {
-    console.log($event);
-    if($event.keyCode==13){
-      this.keyword = keyword;
-    }
+  doSearch(keyword: string) {
+    this.keyword = keyword;
   }
 }
