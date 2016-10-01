@@ -11,13 +11,24 @@ export class HeaderComponent implements OnInit {
   titleurl = "http://google.com.tw";
   subtitle = "記載著 leochen 在網路世界的學習心得與技術分享";
 
-  changeTitle($event: MouseEvent){
+  num: number = 10;
+
+  changeTitle($event: MouseEvent) {
     console.log($event);
-    if($event.shiftKey){
+    if ($event.shiftKey) {
       this.title = this.title + " shift";
-    } else{
+    } else {
       this.title = this.title + " yoyo";
     }
+
+    this.num++;
+  }
+
+  getClass() {
+    return {
+      'red': this.num % 2 == 0,
+      'blue': this.num % 2 == 1
+    };
   }
   constructor() { }
 
