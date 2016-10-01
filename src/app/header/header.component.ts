@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit {
     } else{
       this.title = this.title + " yoyo";
     }
-
   }
   constructor() { }
 
