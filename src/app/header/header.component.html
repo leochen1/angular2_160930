@@ -29,7 +29,7 @@
 
           <div class="pull-left">
             <h1><a [href]="titleurl">{{title}}</a></h1>
-            <h3 [innerHTML]="subtitle"></h3>
+            <h3 [innerHTML]="subtitle" (click)="changeTitle($event)"></h3>
           </div>
 
           <div id="social-icons" class="pull-right social-icon">
