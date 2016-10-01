@@ -9,7 +9,7 @@
 
         <!-- Article START-->
         <!--給予delete事件,並呼叫function(), $event為要刪掉那筆item的資料-->
-        <app-article *ngFor="let item of data" [item]="item" (delete)="doDeleteArticle($event)"></app-article>
+        <app-article *ngFor="let item of datasvc.data" [item]="item" (delete)="datasvc.doDeleteArticle($event)"></app-article>
         <!-- Article END-->
 
       </div>
